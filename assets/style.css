@@ -1,0 +1,597 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(AmsiPro-Bold.otf); }
+@font-face {
+  font-family: AmsiRegular;
+  src: url(AmsiPro-Regular.otf); }
+@font-face {
+  font-family: AmsiLight;
+  src: url(AmsiPro-Light.otf); }
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url(img/bg.png);
+  background-size: cover; }
+
+#guide-intro {
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  width: 250px;
+  padding: 15px 35px 15px 27px;
+  background-color: rgba(2, 150, 166, 0.5);
+  border-radius: 25px;
+  -webkit-animation: fadein 1000ms ease-out; }
+  #guide-intro h1 {
+    font-family: myFirstFont;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px; }
+  #guide-intro p {
+    font-family: AmsiLight;
+    color: white; }
+
+#guide-profile {
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  width: 250px;
+  padding: 15px 25px 15px 27px;
+  background-color: rgba(2, 150, 166, 0.5);
+  border-radius: 25px;
+  -webkit-animation: fadein 1000ms ease-out; }
+  #guide-profile h1 {
+    font-family: myFirstFont;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px; }
+  #guide-profile p {
+    font-family: AmsiLight;
+    color: white; }
+
+#guide-train {
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  width: 250px;
+  -webkit-animation: fadein 1000ms ease-out; }
+  #guide-train img {
+    width: 50px; }
+
+#guide-connect {
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  width: 250px;
+  padding: 15px 20px 15px 27px;
+  background-color: rgba(2, 150, 166, 0.5);
+  border-radius: 25px;
+  -webkit-animation: fadein 1000ms ease-out; }
+  #guide-connect h1 {
+    font-family: myFirstFont;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px; }
+  #guide-connect p {
+    font-family: AmsiLight;
+    color: white; }
+
+#guide-journal-arrow {
+  display: none;
+  position: absolute;
+  top: 64%;
+  left: 40%;
+  margin-top: -118px;
+  -webkit-animation: fadein 1000ms ease-out; }
+  #guide-journal-arrow img {
+    width: 50px; }
+
+#guide-journal {
+  display: none;
+  position: absolute;
+  top: 65%;
+  left: 33%;
+  margin-top: -118px;
+  width: 250px;
+  padding: 15px 25px 15px 27px;
+  background-color: rgba(2, 150, 166, 0.5);
+  border-radius: 25px;
+  -webkit-animation: fadein 1000ms ease-out; }
+  #guide-journal h1 {
+    font-family: myFirstFont;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px; }
+  #guide-journal p {
+    font-family: AmsiLight;
+    color: white; }
+
+#guide-gratitude {
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  width: 280px;
+  padding: 15px 25px 15px 27px;
+  background-color: rgba(2, 150, 166, 0.5);
+  border-radius: 25px;
+  -webkit-animation: fadein 1000ms ease-out; }
+  #guide-gratitude h1 {
+    font-family: myFirstFont;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px; }
+  #guide-gratitude p {
+    font-family: AmsiLight;
+    color: white; }
+
+#joyn-intro {
+  display: none;
+  background-image: url(img/bg-01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  #joyn-intro #joyn-logo {
+    position: absolute;
+    width: 447px;
+    height: 166px;
+    left: 50%;
+    top: 50%;
+    margin-left: -223px;
+    margin-top: -250px;
+    background-image: url(img/joyn-logo.png); }
+
+.hide-menu {
+  display: none; }
+
+#phone {
+  width: 350px;
+  height: 715px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -375px;
+  margin-left: -175px;
+  background-image: url(img/iphone.png);
+  background-size: 350px;
+  background-repeat: no-repeat; }
+
+#wrapper-screen {
+  width: 304px;
+  height: 540px;
+  position: absolute;
+  top: 87px;
+  left: 23px;
+  overflow: hidden;
+  background-color: transparent; }
+
+section #load {
+  z-index: 500; }
+
+#load-logo img {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -37px;
+  margin-left: -75px;
+  -webkit-animation: fadein 4000ms ease-out;
+  z-index: 505; }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+#load-screen img {
+  width: 305px;
+  position: absolute;
+  z-index: 500; }
+
+/* Navigation Menu - Background */
+.navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0px;
+  z-index: 0;
+  list-style: none;
+  background: url("img/joyn-load.jpg");
+  background-size: 368px; }
+  .navigation li {
+    height: 81px;
+    position: relative; }
+    .navigation li .nav-icon {
+      width: 100%;
+      position: absolute;
+      bottom: 30px;
+      text-align: center; }
+    .navigation li h1 {
+      position: absolute;
+      bottom: 0;
+      font-family: myFirstFont;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: normal;
+      width: 100%;
+      text-align: center; }
+  .navigation li:first-child {
+    height: 43px; }
+    .navigation li:first-child a img {
+      width: 65px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -33px;
+      margin-top: -11px; }
+  .navigation li:nth-child(2) {
+    height: 81px; }
+    .navigation li:nth-child(2) a img {
+      width: 81px; }
+
+/* Navigation Menu - List items */
+.nav-item {
+  width: 81px; }
+
+.nav-item a {
+  display: block;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none; }
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white;
+  /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0; }
+
+/* Nav Trigger */
+.nav-trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0); }
+
+label[for="nav-trigger"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  height: 43px;
+  width: 43px;
+  cursor: pointer;
+  background-color: #ffc928; }
+  label[for="nav-trigger"] img {
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -13px;
+    margin-top: -9px; }
+
+/* Make the Magic Happen */
+.nav-trigger + label, .site-wrap {
+  transition: left 0.3s; }
+
+.nav-trigger:checked + label {
+  left: 81px; }
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 81px; }
+
+/* Micro reset */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif; }
+
+.site-wrap section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white; }
+
+.carousel-indicators {
+  bottom: 100px; }
+
+#carousel-login {
+  width: 305px;
+  height: 456px;
+  background: url("img/intro-bg.jpg");
+  background-size: 305px;
+  border: none; }
+  #carousel-login .carousel-control.left, #carousel-login .carousel-control.right {
+    background: none; }
+  #carousel-login .carousel-content {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-family: AmsiLight;
+    color: white; }
+    #carousel-login .carousel-content h3 {
+      position: absolute;
+      top: 90px;
+      width: 100%;
+      text-align: center;
+      text-transform: lowercase;
+      font-size: 18px;
+      letter-spacing: 1px; }
+    #carousel-login .carousel-content #intro-logo {
+      position: absolute;
+      top: 115px;
+      width: 100%;
+      text-align: center; }
+      #carousel-login .carousel-content #intro-logo img {
+        width: 150px;
+        margin-left: -7px; }
+    #carousel-login .carousel-content #intro-copy p {
+      position: absolute;
+      top: 190px;
+      left: 50%;
+      margin-left: -122px;
+      width: 245px;
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 1px; }
+    #carousel-login .carousel-content #item-2 img {
+      margin-top: 115px;
+      width: 90px; }
+    #carousel-login .carousel-content #item-2 p {
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      margin-left: -122px;
+      width: 245px;
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 1px; }
+    #carousel-login .carousel-content #item-3 img {
+      margin-top: 80px;
+      width: 70px; }
+    #carousel-login .carousel-content #item-3 p {
+      position: absolute;
+      top: 170px;
+      left: 50%;
+      margin-left: -122px;
+      width: 245px;
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 1px; }
+
+#login {
+  z-index: 3; }
+
+#intro {
+  width: 100%;
+  height: 456px;
+  position: absolute;
+  top: 0;
+  background: url("img/intro-bg.jpg");
+  background-size: 305px; }
+  #intro h1 {
+    width: 50%;
+    float: left;
+    margin-top: 430px;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: AmsiRegular;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px; }
+
+#log-in {
+  width: 100%;
+  height: 162px;
+  position: absolute;
+  bottom: 0;
+  background-color: #eeeeee; }
+
+#sign-up {
+  width: 100%;
+  height: 162px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0; }
+  #sign-up img {
+    margin-top: -15px;
+    width: 305px; }
+
+#user-profile #user-cover h1 {
+  position: absolute;
+  top: 65px;
+  left: 15px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: myFirstFont; }
+#user-profile #user-cover img {
+  width: 305px; }
+#user-profile #user-bars {
+  height: 40px;
+  position: relative; }
+  #user-profile #user-bars .user-bars {
+    height: 40px;
+    width: 33.33333333%;
+    float: left; }
+  #user-profile #user-bars #one {
+    background-color: #eeeeee; }
+  #user-profile #user-bars #two {
+    background-color: #bababa; }
+  #user-profile #user-bars #three {
+    background-color: #eeeeee; }
+#user-profile #activity-log {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  #user-profile #activity-log img {
+    width: 305px; }
+
+#train img {
+  width: 305px; }
+
+.search {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-block;
+  z-index: 2; }
+
+.search input {
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  color: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+  outline: 0 none;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  -webkit-transform: translateZ(1px);
+  -moz-transform: translateZ(1px);
+  -ms-transform: translateZ(1px);
+  -o-transform: translateZ(1px);
+  transform: translateZ(1px);
+  z-index: 2; }
+
+.search input:focus {
+  width: 200px;
+  color: white;
+  font-size: 16px;
+  font-family: AmsiRegular; }
+
+.search:after {
+  content: url("img/search-icon.svg");
+  position: absolute;
+  color: white;
+  top: 9px;
+  right: 9px;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  -webkit-transform: translateZ(1px);
+  -moz-transform: translateZ(1px);
+  -ms-transform: translateZ(1px);
+  -o-transform: translateZ(1px);
+  transform: translateZ(1px);
+  z-index: 1; }
+
+#connect img {
+  position: absolute;
+  bottom: -2px;
+  width: 305px; }
+
+#explore .explore-scroll {
+  margin-top: -2px; }
+  #explore .explore-scroll img {
+    width: 305px; }
+
+#journal img {
+  position: absolute;
+  bottom: -2px;
+  width: 305px; }
+
+#save img {
+  position: absolute;
+  bottom: 0;
+  width: 305px; }
+
+.h1-view {
+  position: absolute;
+  margin-top: 0px;
+  top: 0px;
+  left: 43px;
+  font-size: 18px;
+  color: #0197a7;
+  letter-spacing: 1px;
+  font-family: AmsiRegular;
+  background-color: #e7f4f0;
+  width: 298px;
+  height: 43px;
+  padding: 15px 0 0 15px; }
+
+.subPop {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 800; }
+
+.xBtn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  right: 0px;
+  background: url("img/xBtn.svg") no-repeat;
+  background-size: 50px;
+  text-indent: -999em;
+  cursor: pointer; }
+
+#gratitude {
+  position: absolute;
+  top: 137px;
+  left: 0;
+  width: 100%;
+  height: 97px;
+  opacity: .3;
+  cursor: pointer;
+  text-indent: -999em; }
+
+header {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("img/joyn-load.jpg"); }
+
+#control {
+  width: 206px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px; }
+  #control #btns img {
+    width: 40px;
+    opacity: .5; }
+
+#page-logo {
+  position: fixed;
+  top: 20px;
+  left: 20px; }
+  #page-logo img {
+    width: 100px; }
+
+/*# sourceMappingURL=style.css.map */
